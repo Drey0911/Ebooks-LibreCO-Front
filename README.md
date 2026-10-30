@@ -1,126 +1,144 @@
-# Libre CO
-
 <p align="center">
-  <img src="./src/assets/img/readLogo.png" alt="Logo Libre CO" width="600" style="vertical-align:middle;"/>
+  <img src="./src/assets/img/readLogo.png" alt="LibreCO logo" width="420"/>
 </p>
 
-## Tecnologías
+<h1 align="center">LibreCO · Frontend</h1>
 
 <p align="center">
-  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white" alt="Node.js"></a>
-  <a href="https://vite.dev"><img src="https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white" alt="Vite"></a>
-  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" alt="React"></a>
-  <a href="https://tailwindcss.com/docs/installation/play-cdn"><img src="https://img.shields.io/badge/Tailwind%20CSS-CDN-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS (CDN)"></a>
-  <a href="https://axios-http.com"><img src="https://img.shields.io/badge/Axios-HTTP%20Client-5A29E4" alt="Axios"></a>
-  <a href="https://lucide.dev"><img src="https://img.shields.io/badge/Lucide-Icons-000000" alt="Lucide"></a>
-  <a href="https://github.com/oframe/ogl"><img src="https://img.shields.io/badge/OGL-WebGL-000000" alt="OGL"></a>
-  <a href="https://eslint.org"><img src="https://img.shields.io/badge/ESLint-9-4B32C3?logo=eslint&logoColor=white" alt="ESLint"></a>
+  SPA para la venta de libros digitales con catálogo, carrito, checkout y biblioteca personal.<br/>
+  <sub>SPA to sell digital books with catalog, cart, checkout and a personal library.</sub>
 </p>
 
-## Descripción
+<p align="center">
+  <img src="https://img.shields.io/badge/stack-MERN-61DAFB?style=flat" alt="MERN"/>
+  <img src="https://img.shields.io/badge/license-All%20rights%20reserved-6B7280?style=flat" alt="All rights reserved"/>
+  <img src="https://img.shields.io/badge/year-2025-495057?style=flat" alt="2025"/>
+</p>
 
-Frontend para un ecommerce de ebooks. Presenta catálogo, destacados, carrito y compra, biblioteca de usuario y autenticación. Se conecta a un backend vía API REST desarrollada con el stack MERN para el uso exclusivo de JavaScript.
+<p align="center">
+  <a href="#español">Español</a> · <a href="#english">English</a> ·
+  <a href="https://github.com/Drey0911/Ebooks-LibreCO-BACKEND">Backend</a>
+</p>
 
-## Requisitos
+<p align="center">
+  <img src="https://drey.is-a.dev/img/projects/project6/project6-7.png" alt="LibreCO home" width="90%"/>
+</p>
 
-- Node.js `18+`
-- npm `10+` (o `pnpm`/`yarn`)
+## Tech stack
 
-## Inicio Rápido
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black" alt="React 19"/>
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite 7"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-CDN-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+  <br/>
+  <img src="https://img.shields.io/badge/Axios-HTTP-5A29E4?style=flat&logo=axios&logoColor=white" alt="Axios"/>
+  <img src="https://img.shields.io/badge/Lucide-Icons-F56565?style=flat" alt="Lucide"/>
+  <img src="https://img.shields.io/badge/OGL-WebGL-000000?style=flat&logo=webgl&logoColor=white" alt="OGL"/>
+  <img src="https://img.shields.io/badge/ESLint-9-4B32C3?style=flat&logo=eslint&logoColor=white" alt="ESLint 9"/>
+</p>
 
-- Instalar dependencias: `npm install`
-- Desarrollo: `npm run dev` y abrir `http://localhost:5173` para desarrollo
-- Compilar producción: `npm run build`
-- Previsualizar build: `npm run preview`
+## Screenshots
 
-## Scripts
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://drey.is-a.dev/img/projects/project6/project6-6.png" alt="Featured books"/>
+      <br/><b>Destacados · Featured</b><br/><sub>Libros en promoción con descuento</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://drey.is-a.dev/img/projects/project6/project6-3.png" alt="Book details"/>
+      <br/><b>Detalle del libro · Book details</b><br/><sub>Sinopsis, ficha técnica y compra</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://drey.is-a.dev/img/projects/project6/project6-4.png" alt="Checkout"/>
+      <br/><b>Checkout</b><br/><sub>Tarjeta, PayPal o transferencia</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://drey.is-a.dev/img/projects/project6/project6-5.png" alt="My library"/>
+      <br/><b>Mi biblioteca · My library</b><br/><sub>Leer y descargar los ebooks comprados</sub>
+    </td>
+  </tr>
+</table>
 
-- `npm run dev`: inicia el servidor de desarrollo de Vite
-- `npm run build`: genera el bundle de producción
-- `npm run preview`: sirve el build para revisión
-- `npm run lint`: ejecuta ESLint sobre el proyecto
+---
 
-## Configuración de API
+## Español
 
-- URL de backend: editar `src/services/api.js` línea 1 (`API_URL = 'http://localhost:5000/api'`)
-- Autenticación: se usa `localStorage` para almacenar `token` y `user`
+> Frontend del e-commerce LibreCO, construido con React y Vite. Se conecta a la [API en Express](https://github.com/Drey0911/Ebooks-LibreCO-BACKEND) para el catálogo, la autenticación y las compras.
 
-## Estructura de Carpetas
+### Funcionalidades
+
+| Área | Descripción |
+|---|---|
+| **Inicio** | Hero animado con una galaxia en WebGL (OGL). |
+| **Catálogo** | Búsqueda, filtros por categoría y paginación. |
+| **Destacados** | Libros en promoción con descuento, estados de carga y vacíos. |
+| **Carrito** | Desplegable en el header con total y botón de pago. |
+| **Checkout** | Pago con tarjeta, PayPal o transferencia. |
+| **Biblioteca** | Abrir y descargar los ebooks comprados (PDF y EPUB). |
+| **Cuenta** | Registro, inicio de sesión y alertas configurables. |
+
+### Cómo ejecutarlo
+
+1. Requisitos: **Node.js 18+**.
+2. Ajusta `API_URL` en `src/services/api.js` (por defecto `http://localhost:5000/api`).
+3. Ejecuta:
+   ```bash
+   npm install
+   npm run dev        # http://localhost:5173
+   ```
+
+| Script | Acción |
+|---|---|
+| `npm run build` | Build de producción |
+| `npm run preview` | Sirve el build |
+| `npm run lint` | ESLint |
+
+### Estructura
 
 ```
 src/
-  assets/
-    img/
-      planetEbook.png
-      readLogo.png
-    react.svg
-  components/
-    UI/
-      Alert.jsx
-    layout/
-      Footer.jsx
-      Header.jsx
-      Modal.jsx
-    sections/
-      About.jsx
-      BookCatalog.jsx
-      Checkout.jsx
-      FeaturedBooks.jsx
-      Features.jsx
-      Hero.jsx
-      MyBooks.jsx
-  hooks/
-    useAuth.js
-  pages/
-    Index.jsx
-  services/
-    api.js
-    authService.js
-    bookService.js
-    purchaseService.js
-  App.css
-  App.jsx
-  index.css
-  main.jsx
+  components/layout     Header (carrito), footer y modal de autenticación
+  components/sections   Hero, catálogo, destacados, checkout, biblioteca
+  hooks/useAuth.js      Login, registro y estado del usuario
+  services/             Cliente REST, auth, libros y compras
 ```
 
-## Arquitectura
+---
 
-- `components/layout`: cabecera, pie y modal de autenticación
-- `components/sections`: héroe, destacados, catálogo, compra, biblioteca, features, acerca
-- `components/UI/Alert.jsx`: alertas con temporizador y tipos (success, error, etc.)
-- `hooks/useAuth.js`: login, registro, logout y gestión de estado de usuario
-- `services/*`: cliente REST, autenticación, libros y compras
+## English
 
-## Estilos
+> Frontend for the LibreCO e-commerce, built with React and Vite. It connects to the [Express API](https://github.com/Drey0911/Ebooks-LibreCO-BACKEND) for the catalog, authentication and purchases.
 
-- Tailwind CSS vía CDN en `index.html` para utilidades (`bg-*`, `text-*`, `rounded-*`, etc.)
-- Animaciones y gradientes definidos con clases utilitarias
-- Iconografía con `lucide-react`
+### Features
 
-## Integración Backend
+| Area | Description |
+|---|---|
+| **Home** | Animated hero with a WebGL galaxy (OGL). |
+| **Catalog** | Search, category filters and pagination. |
+| **Featured** | Discounted books, with loading and empty states. |
+| **Cart** | Header dropdown with total and checkout button. |
+| **Checkout** | Pay by card, PayPal or bank transfer. |
+| **Library** | Open and download purchased ebooks (PDF and EPUB). |
+| **Account** | Sign up, sign in and configurable alerts. |
 
-- Base: `src/services/api.js` define `API_URL` y métodos `request`/`authenticatedRequest`
-- Autenticación: `POST /auth/login`, `POST /auth/register`, `POST /auth/logout` (`src/services/authService.js`)
-- Libros: `/books`, `/books/promocionales`, `/books/search`, `/books/:id` (`src/services/bookService.js`)
-- Compras: `POST /purchases`, `GET /purchases`, `GET /purchases/check/:libroId`, `GET /purchases/:id` (`src/services/purchaseService.js`)
+### Getting started
 
-## Funcionalidades Clave
+1. Requirements: **Node.js 18+**.
+2. Set `API_URL` in `src/services/api.js` (default `http://localhost:5000/api`).
+3. Run:
+   ```bash
+   npm install
+   npm run dev        # http://localhost:5173
+   ```
 
-- Catálogo con búsqueda, filtros por categoría y paginación (`src/components/sections/BookCatalog.jsx`)
-- Libros destacados con estados de carga y vacíos (`src/components/sections/FeaturedBooks.jsx`)
-- Carrito en `Header` con dropdown, total y botón de pago (`src/components/layout/Header.jsx`)
-- Checkout con métodos de pago (tarjeta, PayPal, transferencia) (`src/components/sections/Checkout.jsx`)
-- Biblioteca del usuario con abrir y descargar ebooks (`src/components/sections/MyBooks.jsx`)
-- Héroe animado con galaxia WebGL usando `ogl` (`src/components/sections/Hero.jsx`)
-- Alertas configurables (`src/components/UI/Alert.jsx`)
+Other scripts: `npm run build`, `npm run preview` and `npm run lint`.
 
-## Notas
+---
 
-- Para despliegue, configure la URL del backend según el entorno de producción en `src/services/api.js`
-- La API tambien se construyo y se encuentra en el otro repositorio de GitHub https://github.com/Drey0911/Ebooks-LibreCO-BACKEND
+## Licencia · License
 
-## Licencia
-Todos los derechos reservados. © 2025 Andrey Stteven Mantilla Leon.
-
-Este software es propiedad de su creador y si se usa como base, inspiración o referencia, se debe creditar al autor.
+Todos los derechos reservados · All rights reserved. © 2025 Andrey Stteven Mantilla Leon. Si se usa como base, inspiración o referencia, se debe dar crédito al autor · If used as a base, inspiration or reference, credit the author.
